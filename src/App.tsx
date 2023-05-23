@@ -1,11 +1,12 @@
 
 import './App.css'
+import CardContainer from './components/CardContainer'
 
 function App() {
 
   return (
     <div className='app-container'>
-      Hello world
+      <CardContainer />
     </div>
   )
 }
