@@ -14,8 +14,8 @@ const Card = ({ items }: Props) => {
           <img src={item.src} alt="images" />
         </div>
         <div className='card-content'>
-          <h2>{item.name}</h2>
-          <h4>{item.age}</h4>
+          <h2 style={{ color: '#1E293B' }}>{item.name}</h2>
+          <h4 style={{ color: '#64748B' }}>{item.age}</h4>
         </div>
       </div>)}
 
