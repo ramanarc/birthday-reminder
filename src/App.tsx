@@ -12,7 +12,7 @@ function App() {
     },
     {
       src: 'https://www.course-api.com/images/people/person-2.jpeg',
-      name: 'Sharon Jeffords',
+      name: 'Sharron Jeffords',
       age: 32
     },
     {
@@ -34,9 +34,10 @@ function App() {
 
   return (
     <div className='app-container'>
-      <CardContainer items={data} />
+      <CardContainer items={data} handleClear={() => setData([])} handleReset={() => window.location.reload()} />
     </div>
   )
 }
 
 export default App
+

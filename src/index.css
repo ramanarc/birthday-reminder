@@ -3,7 +3,7 @@
 .card-wrap{
   display: flex;
   flex-direction: row;
-  padding: 20px 0px;
+  padding: 8px 0px;
 }
 
 .card-content{
@@ -18,7 +18,7 @@
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #CBD5E1;
-  padding: 28px;
+  padding: 20px;
 }
 
 
@@ -33,14 +33,24 @@
 button{
   padding: 12px 16px;
   width: 100%;
-  background-color: #6D28D9;
-  color: #fff;
   border-radius: 6px;
   cursor: pointer;
+  border: transparent;
 }
 
-button:hover{
+.btn-primary{
+  background-color: #6D28D9;
+  color: #fff;
+  margin: 12px 0px;
+}
+
+.btn-primary:hover{
     background-color: #5B21B6;
+}
+
+.btn-outline{
+  padding: 12px 16px;
+  width: 100%;
 }
 
 .img-wrap{

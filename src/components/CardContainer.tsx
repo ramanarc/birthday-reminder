@@ -7,14 +7,18 @@ export interface Items {
 }
 interface Props {
   items: Items[];
+  handleClear: () => void;
+  handleReset: () => void;
 }
 
-const CardContainer = ({ items }: Props) => {
+const CardContainer = ({ items, handleClear, handleReset }: Props) => {
   return (
     <div className='card-container'>
-      <h1>{items.length} Birthdays Today</h1>
+      <h2 style={{ marginBottom: '10px' }}>{items.length} Birthdays Today</h2>
       <Card items={items} />
-      <button>Clear All</button>
+      {/* Implement clear all functioanlity - pass it to parent and setData to an empty [] */}
+      <button className='btn-primary' onClick={handleClear}>Clear All</button>
+      <button className='btn-outline' onClick={handleReset}>Reset</button>
     </div>
   )
 }
