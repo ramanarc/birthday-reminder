@@ -43,11 +43,17 @@ button:hover{
     background-color: #5B21B6;
 }
 
-img{
+.img-wrap{
   width: 60px;
-  heigth: 60px;
-  border-radius: 100px;
-  object-fit: cover;               
+  height: 60px;
+  overflow: hidden;
+}
+
+.img-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;             
 }
 
 /* CSS Reset */

@@ -1,13 +1,25 @@
+import { Items } from "./CardContainer"
 
-const Card = () => {
+interface Props {
+  items: Items[];
+}
+
+
+
+const Card = ({ items }: Props) => {
   return (
-    <div className='card-wrap'>
-      <img src="https://www.course-api.com/images/people/person-1.jpeg" alt="" />
-      <div className='card-content'>
-        <h2>Name</h2>
-        <h4>Age</h4>
-      </div>
-    </div>
+    <>
+      {items.map((item) => <div className='card-wrap' >
+        <div className="img-wrap">
+          <img src={item.src} alt="images" />
+        </div>
+        <div className='card-content'>
+          <h2>{item.name}</h2>
+          <h4>{item.age}</h4>
+        </div>
+      </div>)}
+
+    </ >
   )
 }
 

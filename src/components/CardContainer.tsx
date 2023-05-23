@@ -1,6 +1,6 @@
 import Card from "./Card"
 
-interface Items {
+export interface Items {
   src: string;
   name: string;
   age: number;
@@ -12,8 +12,8 @@ interface Props {
 const CardContainer = ({ items }: Props) => {
   return (
     <div className='card-container'>
-      <h1>5 Birthdays Today</h1>
-      <Card />
+      <h1>{items.length} Birthdays Today</h1>
+      <Card items={items} />
       <button>Clear All</button>
     </div>
   )
